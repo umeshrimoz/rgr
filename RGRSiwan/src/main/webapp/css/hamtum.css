@@ -1,0 +1,368 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 16, 2021, 10:46:14 AM
+    Author     : Kumar Umesh
+*/
+*
+{
+    margin: 0;
+    padding: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; 
+  font-family: 'Open Sans', sans-serif;
+  color: #ffbd20;
+}
+
+h1{
+  font-size: 36px;
+  color:#fff;
+}
+
+h2{
+  font-size: 6px;
+  color: #ffbd20;
+}
+
+h3{
+  font-size: 20px;
+  color: red;
+  font-weight: 200;
+  /*line-height: 24px;*/
+}
+
+h4{
+  font-size: 16px;
+}
+
+.aa
+{
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    min-height: 100px;
+    background: #ffbd20;
+    /*background: #20B8FF;*/
+}
+.omi
+{
+    position: relative;
+    display: flex;
+    flex-direction: colum; 
+}
+.omi .box
+{
+    position: relative;
+    width: 440px;
+    height: 240px;
+    margin: 15px 0;
+    background: #fff;
+    font-family: consolas;
+    font-size: 2.5em;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: rgba(0,0,0,0.6);
+ }
+ .omi .box.shadow1
+ {
+     box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+ }
+ .omi .box.shadow2:before
+ {
+     content: '';
+     position: absolute;
+     bottom: 10px;
+     left: 10%;
+     width: 90%;
+     height: 90px;
+     background: rgba(0,0,0,0.3);
+     transform-origin: left;
+     transform: skewY(5deg);
+     z-index: -1;
+     filter: blur(5px);
+ }
+.omi .box.shadow3:before
+ {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 50%;
+     height: 30px;
+     background: rgba(0,0,0,0.3);
+     transform-origin: right;
+     transform: skewY(-8deg);
+     z-index: -1;
+     filter: blur(10px);
+ }
+.omi .box.shadow3:after
+ {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 50%;
+     height: 30px;
+     background: rgba(0,0,0,0.3);
+     transform-origin: left;
+     transform: skewY(8deg);
+     z-index: -1;
+     filter: blur(10px);
+ }
+.omi .box.shadow4:before
+{
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(10px);
+}
+.omi .box.shadow5:before
+{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    width: 90%;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+    filter: blur(10px);
+}
+.omi .box.shadow6
+{
+    background: #ffbd20;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,0,0.2),
+                15px 15px 15px rgba(0,0,0,0.1)
+}
+.omi .box.shadow7
+{
+    background: #ffbd20;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255,255,0,0.3),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,0,0.4),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+    
+    
+}
+.fa-margin
+{
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+
+.panel-default{
+  border-color: transparent;
+}
+
+.panel-default>.panel-heading,
+.panel{
+    background-color: #f9f7f7 ; 
+  border:0 none;
+  box-shadow:none;
+  
+}
+
+.panel-default>.panel-heading+.panel-collapse .panel-body{
+  background: #fff;
+  color: #858586;
+  
+}
+
+.panel-body{
+  padding: 20px 20px 10px;
+  background: whitesmoke;
+    
+
+}
+
+
+.panel-group .panel+.panel{
+  margin-top: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.panel-group .panel{
+  border-radius: 0;
+}
+
+.panel-heading{
+  border-radius: 0;
+}
+
+.panel-title>a{
+  color: #4e4e4e;
+}
+
+.accordion-inner img{
+  border-radius: 4px;
+}
+
+.accordion-inner h4{
+  margin-top: 0;
+}
+
+.panel-heading.active{
+  background: #1f1f20;
+}
+
+.panel-heading.active .panel-title>a{
+  color:#fff;
+}
+
+a.accordion-toggle  i{
+  width: 45px;
+  line-height: 44px;
+  font-size: 20px;
+  margin-top: -10px;
+  text-align: center;
+  margin-right: -15px;
+  background: #c9c9c9;
+}
+
+.panel-heading.active a.accordion-toggle i{
+  background: #c52d2f;
+  color: #fff;
+}
+
+.panel-heading.active a.accordion-toggle.collapsed i{
+  background: #ffbd20;
+  color: #fff;
+}
+
+.nav-tabs>li{
+  margin-bottom: 0px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-tabs{
+  border-bottom: transparent;
+  border-right: 1px solid #e6e6e6;
+}
+/*nav manu*/
+
+.nav-tabs>li>a {
+  background: #bd1e24;
+  color: #fff;
+  border-radius: 0;
+  border: 0 none;
+  line-height: 24px;
+  margin-right:0;
+  padding: 13px 15px;
+}
+
+.nav-tabs li:last-child{
+  border-bottom: 0 none;
+} 
+
+.nav-stacked>li+li{
+  margin-top: 0;
+}
+
+.nav-tabs>li>a:hover{
+  background: #1f1f20;
+  color:#fff;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+  border: 0;
+  color:#fff;
+  background: #1f1f20;
+  position: relative;
+}
+
+.nav-tabs>li.active>a:after {
+  position: absolute;
+  content:  "";
+  width: auto;
+  height: auto;
+  border-style:solid;
+  border-color: transparent transparent transparent #1f1f20;
+  border-width: 25px 22px;
+  right: -44px;
+  top:0;
+}
+
+.tab-wrap{
+  border:1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.tab-content{
+  padding: 20px;
+}
+
+.tab-content h2{
+  margin-top: 0;
+}
+
+.tab-content img{
+  border-radius: 4px;
+}
+/*gallery*/
+h5{
+    text-align: center;
+    color: #ffbd20;
+    margin: 30px 0 50px;
+}
+.gallery{
+    margin: 0px 0px;
+}
+.gallery img{
+    filter: grayscale(50%);
+    transition: 1s;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.25);
+}
+/*card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: #20B8FF;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #20B8FF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.5;
+}
