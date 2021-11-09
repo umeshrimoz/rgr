@@ -12,6 +12,7 @@ import in.co.rgr.app.serviceImpl.LoginServiceImpl;
 /**
  * Servlet implementation class LoginController
  */
+
 @SuppressWarnings("serial")
 @WebServlet("/LoginController")
 public class LoginController extends HttpServlet { 

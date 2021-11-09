@@ -48,7 +48,7 @@
                     <li><a href="gallery.jsp">Gallery</a></li>                        
                     <li><a href="product_price.jsp">Product_Price</a></li>                        
                     <li><a href="#">News</a></li>                        
-                    <li><a href="contact-us.jsp">Contact</a></li>                        
+                    <li><a href="contact.jsp">Contact</a></li>                        
 
                 </ul>
 

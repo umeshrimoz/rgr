@@ -12,15 +12,14 @@ import in.co.rgr.app.entity.Login;
 
 public class LoginServiceImpl {
 
-	
+	Configuration configuration = new Configuration().configure();
+	SessionFactory sessionFactory = configuration.buildSessionFactory();
 	Session session = null;
 	Transaction transaction = null;
 
 	public boolean chkAuth(String user, String pass) {
 		boolean res = false;
-		try {
-			Configuration configuration = new Configuration().configure();
-			SessionFactory sessionFactory = configuration.buildSessionFactory();
+		try {			
 			session = sessionFactory.openSession();
 			transaction = session.beginTransaction();
 			Query query = session.createQuery("from Login where username=:username and password=:pass");
@@ -44,8 +43,6 @@ public class LoginServiceImpl {
 	public boolean add(String user, String pass) {
 		boolean res = false;
 		try {
-			Configuration configuration = new Configuration().configure();
-			SessionFactory sessionFactory = configuration.buildSessionFactory();
 			session = sessionFactory.openSession();
 			transaction = session.beginTransaction();
 			Login l = new Login();
